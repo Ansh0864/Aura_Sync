@@ -1,0 +1,79 @@
+# ========================
+# Frontend (Node.js / React / Vite)
+# ========================
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# Backend (Python / FastAPI)
+# ========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# FastAPI / Uvicorn Cache
+.pytest_cache/
+
+# ========================
+# AI Model & Dataset
+# ========================
+# Ignore large dataset directories
+dataset/
+
+# Ignore trained model files (if you don't want to commit large binaries)
+# Note: If you want to keep the final mood_model.h5 in the repo, you can remove the next line.
+*.h5
+*.hdf5
+*.keras
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
