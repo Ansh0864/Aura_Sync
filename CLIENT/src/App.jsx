@@ -5,7 +5,7 @@ import Cursor from './components/Cursor';
 import Home from './pages/Home';
 import Scanner from './pages/Scanner';
 import Dashboard from './pages/Dashboard';
-import MoodHistory from './pages/MoodHistory';
+import MoodHistory from './pages/MoodHistory'; 
 import MusicPlayer from './pages/MusicPlayer';
 import About from './pages/About';
 
