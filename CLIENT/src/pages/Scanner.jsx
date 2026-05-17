@@ -4,6 +4,7 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { ScanFace, Cpu, Music2, RefreshCw, ZapOff, ChevronRight } from 'lucide-react';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 const MOOD_CONFIG = {
   Happy:   { color: '#F59E0B', label: 'Joy Detected',     emoji: '✦', desc: 'High valence, high energy' },
@@ -60,7 +61,7 @@ export default function Scanner() {
       const form  = new FormData();
       form.append('file', blob, 'capture.jpg');
 
-      const response = await axios.post('http://localhost:8000/predict-mood/', form);
+      const response = await axios.post(`${API_BASE_URL}/predict-mood/`, form);
       const detected = response.data.emotion;
       const detectedSongs = response.data.songs || [];
       setMood(detected);
